@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type='text/css' href="index.css">
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+</head>
+
+<body>      
+        <div class="container">        
+        <h1 class="text-center">CALCULATOR</h1>
+        <div id="hello" class="text-center">
+        <div id='textarea' class='text-right'></div>
+        
+            <div class='row1' style="width:100%;margin:auto">
+            <button id='' onclick="backspace()" class='col-md-31 text-center'>Backspace</button>
+            <button id='' class='col-md-31 text-center'>CE</button>
+            <button id='clear' class='col-md-31 text-center'>C</button>
+            
+        </div>
+        
+        <div class='row2' id="1" style="width:100%;" >
+            <button id='seven' class='col-md-21 text-center'>7</button>
+            <button id='eight' class='col-md-21 text-center'>8</button>
+            <button id='nine' class='col-md-21 text-center'>9</button>
+            <button id='div' class='col-md-21 text-center'>/</button>
+            <button id='sqrt' onclick="sqrt()" class='col-md-21 text-center'>sqrt</button>
+            
+        </div>
+        
+        <div class='row3'style="width:100%">
+            
+            <button id='four' class='col-md-21 text-center'>4</button>
+            <button id='five' class='col-md-21 text-center'>5</button>
+            <button id='six' class='col-md-21 text-center'>6</button>
+            <button id='mul' class='col-md-21 text-center'>*</button>
+            <button id='mod' class='col-md-21 text-center'>%</button>
+            
+        </div>
+        
+        <div class='row4' style="width:100%">
+            <button id='one' class='col-md-21 text-center'>1</button>
+            <button id='two' class='col-md-21 text-center'>2</button>
+            <button id='three' class='col-md-21 text-center'>3</button>
+            <button id='min' class='col-md-21 text-center'>-</button>
+            <button id='num' class='col-md-21 text-center'>1/x</button>
+        </div>
+            
+            <div class='row5' style="width:100%">
+            <button id='zero' class='col-md-21 text-center'>0</button>
+            <button id='addsign' class='col-md-21 text-center'>+/-</button>
+            <button id='d' class='col-md-21 text-center'>.</button>
+            <button id='add' class='col-md-21 text-center'>+</button>
+            <button id='e' class='col-md-21 text-center'>=</button>
+            
+    </div>
+            </div>
+    </div>
+
+</body>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script type='text/javascript' src='script.js'></script>
+
+</html>
