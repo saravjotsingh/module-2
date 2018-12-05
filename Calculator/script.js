@@ -1,121 +1,114 @@
 
 var output = []; 
 
-  
-
-
-$(document).ready(function(){
-    
-    
-   $('#one').click(function(){
-//       $('#textarea').append(1);
-//        output.push(1);
+document.getElementById("one").addEventListener('click',function(){
      var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '1'; 
          output.push(1);
-   })
-    
-   $('#two').click(function(){
-//       $('#textarea').append(2);
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+
+document.getElementById("two").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '2'; 
        output.push(2);
-   })
-   $('#three').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("three").addEventListener('click',function(){
+     var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '3'; 
        output.push(3);
-   })
-   
-   $('#four').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("four").addEventListener('click',function(){
+     var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '4'; 
        output.push(4);
-   })
-   
-   $('#five').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("five").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '5'; 
        output.push(5);
-   })
-   
-   $('#six').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("six").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '6'; 
        output.push(6);
-   })
-   
-   $('#seven').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("seven").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '7'; 
        output.push(7);
-   })
-   
-   $('#eight').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("eight").addEventListener('click',function(){
+      var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '8'; 
        output.push(8);
-   })
-   
-   $('#nine').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("nine").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '9'; 
        output.push(9);
-   })
-   
-   $('#zero').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("zero").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '0'; 
        output.push(0);
-   })
-   
-   $('#d').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("d").addEventListener('click',function(){
+     var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '.'; 
        output.push('.');
-   })
-   
-   $('#div').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("div").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '/'; 
        output.push('/');
-   })
-   
-   $('#mul').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+document.getElementById("mul").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '*'; 
        output.push('*');
-   })
-   
-   $('#min').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+
+document.getElementById("min").addEventListener('click',function(){
+     var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '-'; 
        output.push('-');
-   })
-   
-   $('#add').click(function(){
-       var val = document.getElementById("textarea").innerHTML;   
+})
+
+
+document.getElementById("add").addEventListener('click',function(){
+    var val = document.getElementById("textarea").innerHTML;   
         document.getElementById("textarea").innerHTML = val + '+'; 
        output.push('+');
        console.log(output)
-   })
-   
-   $('#clear').click(function(){
-       document.getElementById('textarea').innerHTML = ' '; 
+})
+
+
+document.getElementById("clear").addEventListener('click',function(){
+    document.getElementById('textarea').innerHTML = ' '; 
        output = [];
-       
-   })
-   
-   $('#e').click(function(){
-       var d = output.join('');
+})
+
+
+
+document.getElementById("e").addEventListener('click',function(){
+    var d = output.join('');
        var a = eval(d);
-       $('#textarea').append('<br>'+ a);
-   })
-   
-   
-
-});
-
+    var value = document.getElementById("textarea").innerHTML
+    document.getElementById('textarea').innerHTML = value  + '<br>' + a;
+})
 
 document.getElementById("mod").addEventListener('click',function(){
     var val = document.getElementById("textarea").innerHTML;   
@@ -132,6 +125,10 @@ document.getElementById("addsign")
     output.unshift('-');
     console.log(output);
     
+})
+
+document.getElementById('num').addEventListener('click',function(){
+    var val = parseInt(document.getElementById("textarea").innerHTML);
 })
 
 
